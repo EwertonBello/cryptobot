@@ -17,7 +17,7 @@ class Meta(commands.Cog):
         reloads cog for when you test the bot in production :sunglas:
         """
         usage = ">reload {arg}"
-        if len(arg) != 0:
+        if arg:
             if arg.lower() == "all":
                 cogs = [x.stem for x in Path('cogs').glob('*.py')]
             else:
