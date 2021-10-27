@@ -15,8 +15,7 @@ class Bot(commands.Bot):
     
     def __init__(self):
         super().__init__(
-            command_prefix=BOT_PREFIX,
-            help_command=None
+            command_prefix=BOT_PREFIX
             )
         self.load_extensions()
 
